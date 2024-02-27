@@ -13,4 +13,205 @@
   - State
   - Hooks (eg., useEffect)
   - Dynamic Rendering.
+
+
+* Creating React Porject : 
+
+1. Creating React Project in Sandbox - 
+  - type react.new in google url you will get a brand new sandbox page.
+  - Sandbox will not install software locally instead you will be working online.
+
+
+2. Creating React Project in code editor that is installing in local environment : 
+  - I am using Vs code : 
+    - Install vs code, nodejs recent version from the browser.
+    - Install all the extensions required for coding in VS Code.
+    - React app can be created using Vite or just by writing create react app
+    - Using Vite - npm create vite@latest react-project 
+    - It will ask several questions just select and get started.
+    - npm run dev - to start up the development server.
+    - npx create-react-app project1 - command to create react project.
+    - npm install - to install all the library required for the project.
+
+
+  *******************  Adding Javascript to a Page and How React Projects Differ   **********************************************
+
+  *  Javascript can be Executed in many Environments : 
+     1. In the Browser : Javascript can be included in any website.
+     2. On any Computer :  The Javascript can be executed outside of the browser too.
+     3. On mobile Devices : With extra technologies like Capacitor or React Native, you can build 
+                            mobile apps based on Javascript.
+
+  
+   1. Adding Javascript Code to a Website : 
+     * Between <script> Tags : By writting the code in between the script tag
+
+             <script>
+             alert ('Hello');
+             </script>
+
+          - Can quickly lead to unmaintainable and complex HTML files.
+          - Typically only used for very short srcipts.
+
+      * Via <script> import : By adding the javascript file link in src attribbute.
+
+            <script src="script.js"></script>
+
+          - Seperates HTML and Javscript code.
+          - Monitoring complex JS powered apps becomes easier.
+
+         # Attributes used in script Tag : 
+
+          <script src="assets/scripts/app.js" ></script> -  src attributes is used to import the js file.
+
+          <script src="script.js" defer></script> - defer attribute to make sure the script that will be imported
+                                                    will only be executed only when the html document has been read and parsed.
+
+          <script src="scripts.js" type="module" ></script> - type='module' this attribute will treat the javacsript file as module.
+
+
+    ****************************** Import and export *****************************
+
+    * Different types of writing import statement : 
+
+    - import { apikey } from "./nameOfTheFile"; - When you want to import named export value.
+    - import {apikey,abc} from "./nameOfTheFile"; - When you want to import multiple named export values.
+    - import apikey from "./nameOfTheFile"; - when you are importing from default export file.
+
+    # All the multiple export things can be grouped into object and that can be used like this : 
+       
+       import * as utils from "./nameOfTheFile";
+       import {apikey,abc as content} from "./nameOfTheFile";
+
+       console.log(util.apikey);
+       console.log(util.abc);
+       console.log(content);
+
+    * Different types of writing export statement : 
+
+    # Named export : 
+     - export let apikey="fgdhghdj";
+     - export let abc = " sneha ";
+
+    # Default export : 
+     - export default "jjhuhjkh"; - default export should only one in a file.
+        
+        - export default is used only for one time in a file.
+        - If you want export the function or one component then you can use export default.
+        - Since there are nothing to export other than that component.
+
+
+******************************** Revisting Variable and Values ************************
+
+* There are different Types of Values : 
+
+1. String : text values
+
+    - Wrapped with single or double quotes.
+    - Can also be created with backticks (`).
+
+    example: "Hello World"
+             'Max'
+             `Hi There`
+
+2. Number : Positive or Negative
+
+    - With decimal oint(float) or without it(integer)
+
+    example : 5, -23
+              3.14, -8.12
+
+3. Boolean : True or false
+
+    - A Simple "Yes" or "No" value type.
+    - Typically used in conditions.
+
+    exaple : true 
+             false
+
+4. Null and Undefined : There is no value.
+
+    - undefined : Default if no value was assigned yet.
+    - null : Explicitly assigned by developer (reset value)
+
+    example : undefined
+              null
+                                              
+
+*********************** Variables store values *********************
+
+Variables :  Variables are Data Containers 
+
+* Why Use Variables ?
+
+   1. Reusability : - Store value in a variable once and use it as often.
+                    - Use it many places as needed.
+
+  2. Readability : - Organize your code over serveral lines rather than writing everything into a single line
+
+
+* Identifiers must follow certain rules amd recommendations : 
+
+  1. Must not contain whitespace or special character (except $ and _)
+     - valid : $userName, age, user_name, data$.
+     - invalid : %userName, age%, user name
+
+  2. May contain numbers but must not start with a number.
+     - valid : user3, us3r. 
+     - invalid : 3user,11players.
+
+  3. Must not use reserved keywords as identifier name.
+     - valid : user, age , data
+     - invalid : let,const, if.
+
+  4. Should use camelCasing.
+     - Recommended : userName, isCorrect.
+     - uncommon : user_name,iscorrect.
+
+  5. Give the valid name for identifiers.
+     - recommended : userName, isCorrect, localData.
+     - uncommon : userDataPoint, correctness, dataLoader.
+
+
+
+******************************** Revisiting Operators *******************************
+
++ -> adition and concatination.
+- -> subtraction.
+* -> Multiplication.
+/ -> Division.
+=== -> checking for a quality.
+<= -> less than equal to.
+>= -> greater than equal to.
+
+
+*************************** Revisiting Objects ******************************
+
+Objects : - In javascript objects are used to group the values.
+          - It has the key value pair
+
+          const user = {
+            name : "Sneha",
+            age : 29
+          }  
+
+********************************* Array and Array methods **************************
+
+* Array : - Arrays are object but they are special kind of object.
+          - The idea behind array is to store the certain values.
+          - The values can be accessed by using the index value.
+
+
+********************************* Spread Operator *****************************
+
+* Spread Operator : - This is used to add the two arrays into one standalone array.
+                    - Spread operator will pull all the values from two arrays and make a single standalone array
+                    - It is used to avoid nested array when combined two arrays.
+
    
+**************************** some Special Javascript Features *************************
+
+* Using Functions as Values : We can use function as value in the function.
+
+
+
