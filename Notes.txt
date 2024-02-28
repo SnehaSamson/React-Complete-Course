@@ -214,4 +214,91 @@ Objects : - In javascript objects are used to group the values.
 * Using Functions as Values : We can use function as value in the function.
 
 
+*************************** React Essentials ***************************
+
+* React Essentials : Components, JSX and State
+ 
+   - Building User interfaces with components.
+   - Using, Sharing and Outputting Data.
+   - Handling User Events.
+   - Building interactive UIs with state.
+
+How React Handles Components 
+
+* Built-in Components : 
+  - Name starts with a lowercase character.
+  - Only valid, officially dfeined HTML elements are allowed.
+  - Are rendered as DOM nodes by React (i.e., displayed on the screen).
+
+* Custom Components : 
+  - Name starts with uppercase character.
+  - Defined by you, "wraps" built in or other custom components.
+  - React Traverses the component tree until it has only built in components left.
+
+
+* Props : React allows you to pass data to components via a concept called Props.
+
+
+********************************** Children prop vs Attribute Props ***************************
+
+There are Two approach to use the prop and pass the value. 
+
+ 1. Children Prop 
+
+ The Children prop -> {props.children}
+ React automatically passes a special prop named "children" to every custom component
+
+ Content for Children 
+  The content between component opening and closing tags is used as a value for the special "children" prop. 
+
+ important points :
+   - For components that take a single piece of renderable SVGTextContentElement, this approach is closer to "normal HTML usage". 
+   - This approach is especially convenient when passing JSX code as a value to another component. 
+
+         export default function TabButton({children}) {
+           return (
+             <li>
+                <button>{children}</button>
+             </li>
+                 );
+            }
+
+            <TabButton>{component}</TabButton>
+
+
+ 2. Attribute props 
+
+    important point : 
+     - This approach makes sense if you got multiple smaller pieces of information that must be passed to a Component.Component
+     - Adding extra porps instead of just wrapping the content with the component tags mean extra Work. 
+
+          export default function TabButton({label}){
+              return (
+                 <li>
+                   <button>{label}</button>
+                 </li>
+                );
+              }
+
+              <TabButton label="component"/>
+
+  
+* Reacting to Events :
+  - In react we have many event listener same in Javascript.
+  - When working in react we will not work on DOM manipulation.
+  - We will add the special element or special prop to the button or anywhere you want to.
+  - to the event you will pass the function as value.
+  - Define the function inside the component.
+
+  <button onClick={clickHandler}>{children}</button>
+
+  function clickHandler() {
+    console.log("Event handled);
+  }
+
+
+
+    
+
+
 
