@@ -297,8 +297,34 @@ There are Two approach to use the prop and pass the value.
   }
 
 
+* React Hooks : - React always executes the functional component once if you declare a variable and you want that variable 
+            value keep updating on doing some events.
+          - The normal variable value will not get updated or get changed.
+          - In this case React has the special concept about state.
+          - State is nothing but a variable that keep changing or updating on doing some events.
+          - In react whatever starts with use they are all hooks in react.
+          - React Hooks are nothing but a special functions.
 
-    
+
+
+* Rules of Hooks : 
+   1. Only call Hooks inside of component functions 
+      - React Hooks must not be called outside of React Component functions.
+
+      function App(){
+        const [val, setVal] = useState(0);
+      }
+
+   2. Only call Hooks on th top level 
+      - React Hooks must not be called in nested code statement (eg., inside of if-statement)
+
+     The below code is wrong useState should not be written in nested code
+
+      function App() {
+        if (some condition){
+          const [val, setVal] = useState(0);
+        }
+      }
 
 
 

@@ -23,13 +23,15 @@
 
 // The above code can be written like this by storing it in one variable 
 
-export default function TabButton({children, onSelect}) {
+
+
+export default function TabButton({children, onSelect, isSelected}) {
     // Passing the children prop to custom component 
 
 
     return (
     <li>
-        <button onClick={onSelect}>{children}</button>
+        <button className={isSelected ? 'active' : undefined} onClick={onSelect}>{children}</button>
     </li>
     );
 }
