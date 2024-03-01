@@ -327,4 +327,25 @@ There are Two approach to use the prop and pass the value.
       }
 
 
+** Forwarding Props to Wrapped elements : 
+    - By using the Rest property ...props in the functional component it will collect all the property present in that component
+    - It will forwad that props to custom props.
 
+
+****************************** React Essentials Deep Dive ******************************
+
+* React Essentials - Deep Dive (Beyond the Basics)
+1. Behind the Scenes of JSX.
+2. Structuring Components and state.
+3. Advanced state usage.
+4. Patterns and Best practices.
+
+
+** Working with Fragments : 
+When you write the JSX code you will have to write a div component and wrap all other components 
+inside it but it is unnessary writting of div tag.
+- To avoid writing the unessary div we can use fragment.
+- Need to import Fragment from react and then use it instead of div
+ <Fragment></Fragment> or we can use like this also <></>
+
+ 
