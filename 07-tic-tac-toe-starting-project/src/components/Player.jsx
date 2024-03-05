@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Player({initialName, symbol, isActive}) {
+export default function Player({initialName, symbol, isActive, onChangeName}) {
     const [ playerName, setPlayerName ] = useState(initialName);
     const [ isEditing, setIsEditing ] = useState(false);
 
@@ -15,6 +15,11 @@ export default function Player({initialName, symbol, isActive}) {
         // - This function will automatically be called by React and will receive the guranteed latest state value. 
 
         setIsEditing ( (editing) => !editing );
+
+        if(isEditing) {
+
+            onChangeName(symbol, playerName)
+        }
         
     }
 
