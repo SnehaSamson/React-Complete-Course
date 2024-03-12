@@ -9,7 +9,7 @@ export default function UserInput({ onChange, userInput }) {
                     <label >Initial Investment</label>
                     <input type="number"
                         required
-                        value={userInput.initialIvestment}
+                        value={userInput.initialInvestment}
                         onChange={(event) =>
                             onChange('initialInvestment', event.target.value)} />
                 </p>
