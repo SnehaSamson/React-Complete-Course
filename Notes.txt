@@ -349,3 +349,61 @@ inside it but it is unnessary writting of div tag.
  <Fragment></Fragment> or we can use like this also <></>
 
  
+ *************************** SYLING REACT APPS ************************
+ Styling React Apps : Static and Dynamic styling for Pretty Apps :-
+
+    - Styling with Vanilla CSS.
+    - Scoping styles with CSS Modules.
+    - CSS-in-JS styling with "Styled Components".
+    - Styling with Tailwind CSS.
+    - Static and Dynamic(Conditional) styling.
+
+
+* Vanilla CSS : Advantages and Disadvantages :
+
+- Advantages : 
+  
+  - Css code is decoupled from JSX code.
+  - You write CSS code as you know and love it.
+  - Css code can be written by another developer who needs only a minimal amount of access to your JSX code.
+
+- Disadvantages : 
+
+   - You need to know CSS.
+   - CSS code is not scoped to components.
+   - Css rules may clash across components.
+     e.g., some CSS class name used in different components for different purposes.
+
+
+***************** Styling React Apps with inline Styles *******************
+
+* Inline Styles : Advantages and Disadvantages :-
+
+  - Advantages : 
+     - Quick and easy to add to JSX.
+     - Styles only effect the element to which you add them.
+     - Dynamic (conditional) styling is simple.
+
+  - Disadvantages : 
+     - You need to know CSS.
+     - You need to style every element individually.
+     - No seperation between CSS and JSX code. 
+
+
+********************** CSS Modules **********************
+
+* CSS Modules : Which helps to write a vanilla CSS with file-specific scoping.
+        - A CSS Modules is a CSS file in which all class names and animation names are scoped locally by default.
+
+
+************ CSS Modules Advantages and Disadvantages *********************
+
+*  Advantages :-
+    - CSS code is decoupled from JSX code.
+    - You write CSS as you know and love it.
+    - CSS code can be written by another developer who needs only minimal amount of access to your JSX code.
+    - CSS classes are scoped to the component(files) which import them -> No CSS class name clashes.
+
+* Disadvantages :-
+    - You need to know css.
+    - You may end up with many relatively small css files in your project.
