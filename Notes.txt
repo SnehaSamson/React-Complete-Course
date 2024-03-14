@@ -407,3 +407,49 @@ inside it but it is unnessary writting of div tag.
 * Disadvantages :-
     - You need to know css.
     - You may end up with many relatively small css files in your project.
+
+
+*********************** Styled Components ****************************
+
+- The idea behind this popular styled component package is that you do not define the css rules styles in seperate css file.
+- But also not as inline styles but we can use as a special component that is built with the help of package.
+ 
+ * Installing Styled component : 
+    - npm install styled-components
+    - npm run dev
+
+ * Steps to write the styles to the component.
+
+ - After installing the package - 
+   - npm install styled-components.
+
+ - import the package using this code 
+   - import {styled} from 'styled-components'
+
+ - Here styled is s javascript object that will map to the various html element.
+
+    const controlContainer = styled.div`
+    display : flex;
+    flex-direction : column;
+    gap : 0.5rem;
+    margin-bottom : 1.5rem;
+    `
+
+  
+  - No need to use camelCasing while writting the css styles.
+  - The above code it will create a seperate div component with our own css style applied to it.
+  - After creating the div with styles we can use this customised components in the file.
+  - <controlContainer></controlContainer/>
+
+
+************* Styled Components **************
+
+* Advantages :-
+  - Quick and easy to add.
+  - You continue "thinking in React" (-> Configurable style functions)
+  - Styles are scoped to components -> No CSS rules clashes.
+
+* Disadvantages :-
+  - You need to know CSS.
+  - No clear seperation of React and CSS code.
+  - You end up with many relatively small "wrapper" components.
