@@ -55,7 +55,7 @@ import logo from '../assets/logo.png';
 export default function Header() {
   return (
     // <StyledHeader>
-    <header className=''>
+    <header className="flex flex-col items-center mt-8 mb-16">
       <img src={logo} alt="A canvas"  />
       <h1 >ReactArt</h1>
 

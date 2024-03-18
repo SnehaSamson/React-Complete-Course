@@ -453,3 +453,28 @@ inside it but it is unnessary writting of div tag.
   - You need to know CSS.
   - No clear seperation of React and CSS code.
   - You end up with many relatively small "wrapper" components.
+
+
+******************* Refs and Portals *************************
+
+Refs and Portals : Advanced DOM Access and Value Management.
+
+  - Accessing DOM elements with Refs.
+  - Managing Values with Refs.
+  - Exposing API functions from components.
+  - Detaching DOM Rendering from JSX structure with Portals.
+
+* Refs : 
+  - Refs in React is a value just as a state, just as a vriable value but it is a special kind of value.
+  - It is created using useRef hook in react.
+
+********************  Refs Vs State  ***********************
+
+* state : 
+  - Causes component re-evaluation (re-execution) when changed.
+  - Should be used for values that are directly reflected in the UI.
+  - Should not be used for " behind the scenes " values that have no direct UI impact.
+
+* Refs : 
+  - Do not cause component re-evaluation when changed.
+  - Can be used to gain direct DOM element access (-> great for reading values or accessing certain browser APIs).
