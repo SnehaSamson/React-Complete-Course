@@ -478,3 +478,14 @@ Refs and Portals : Advanced DOM Access and Value Management.
 * Refs : 
   - Do not cause component re-evaluation when changed.
   - Can be used to gain direct DOM element access (-> great for reading values or accessing certain browser APIs).
+
+
+  ***************** Practice Project : Advanced Concepts *******************
+  - Working with Components, state, styling, Refs and Portals.
+
+  What you learn :-
+    - Build a "Project Management" Web App.
+    - Build, style, Configure and Re-use components.
+    - Manage State.
+    - Access DOM elements and Browser APIs with Refs.
+    - Manage JSX Rendering Positions with Portals.
