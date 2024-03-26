@@ -40,10 +40,9 @@ export default function ProjectsSidebar({
                         </li>
 
                         );
-                    }
-                 )}
+                    })}
                 </ul>
             </aside>
         </>
-    )
+    );
 }
