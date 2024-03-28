@@ -489,3 +489,39 @@ Refs and Portals : Advanced DOM Access and Value Management.
     - Manage State.
     - Access DOM elements and Browser APIs with Refs.
     - Manage JSX Rendering Positions with Portals.
+
+
+
+**************** WORKING WITH FORMS AND USER INPUTS ***********************
+
+* Working with Forms and User Input : Its Trickier than it Might statement
+
+- What's Difficult About Forms?
+- Handling Form Submission and validating user input.
+- Using Built-in Form Features.
+- Building Custom Solutions
+
+* What are forms and what's so difficult about them?
+
+- Form is a collection of input fields.
+- Technically form is a simply a collection of input fields which typically used in conjunction with label that are wrapped by the html built in elements.
+
+* WHATS SO DIFFICULT ?
+
+- Two main things we need to do with the forms : 
+- 1. Form Submission.
+- 2. Input Validation.
+
+* Form Submission :
+
+- Handling submission is relatively easy.
+- Entered values can be managed via state.
+- Alternatively they can be extracted via refs.
+- Or via FormData and native browser features.
+
+* Input Validation :
+- Providing a good user experience is tricky.
+- You can validate on every keystroke -> errors may be shown too early.
+- You can validate on last focus -> errors may be shown too long.
+- You can validate on form submission -> errors may be shown too late.
+
