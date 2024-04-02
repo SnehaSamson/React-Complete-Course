@@ -525,3 +525,17 @@ Refs and Portals : Advanced DOM Access and Value Management.
 - You can validate on last focus -> errors may be shown too long.
 - You can validate on form submission -> errors may be shown too late.
 
+
+************************* How to avoid page reloading when login button clicked **********************
+
+
+        Whenever we submit the form or click on login button the page will automatically reloaded to avoid this we can 
+        do it in two ways.
+        1. By adding type="button" attribute to the button element by default the type attribute will be set to submit.
+        2. by adding the onSubmit prop to form element and listening the event.
+
+*********************************************
+
+* To have access to the values entered by the users :
+1. One way by using the useState hook in all the input field.
+2. Or using useState hook for all the input fields and extracting them as an object.

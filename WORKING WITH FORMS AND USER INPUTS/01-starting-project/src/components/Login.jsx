@@ -1,11 +1,17 @@
+import { useState } from "react";
+
 export default function Login() {
 
-  function handleSubmit() {
+ const [enteredEmail, setEnteredEmail] = useState();
+  function handleSubmit(event) {
+    event.preventDefault();
 console.log('Submitted')
+
+
   }
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Login</h2>
 
       <div className="control-row">
@@ -22,7 +28,14 @@ console.log('Submitted')
 
       <p className="form-actions">
         <button className="button button-flat">Reset</button>
-        <button className="button" onClick={handleSubmit}>Login</button>
+{/* 
+        Whenever we submit the form or click on login button the page will automatically reloaded to avoid this we can 
+        do it in two ways.
+        1. By adding type="button" attribute to the button element by default the type attribute will be set to submit.
+        2. by adding the onSubmit prop to form element and listening the event. */}
+
+        {/* <button type="button" className="button" onClick={handleSubmit}>Login</button> */}
+        <button className="button" >Login</button>
       </p>
     </form>
   );
