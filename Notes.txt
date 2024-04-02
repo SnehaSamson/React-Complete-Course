@@ -537,5 +537,8 @@ Refs and Portals : Advanced DOM Access and Value Management.
 *********************************************
 
 * To have access to the values entered by the users :
-1. One way by using the useState hook in all the input field.
-2. Or using useState hook for all the input fields and extracting them as an object.
+1. One way by using the seperate useState hook in all the input field.
+2. Or using only one useState hook for all the input fields and extracting them as an object.
+
+** Extracting values with help of useState is one way of handling user input.
+** Another way of Extracting values from user input is by using the refs.
